@@ -1,0 +1,9 @@
+var eventUtility = {
+	getCharCode:function(event){
+	if(typeof event.charCode==="number"){
+	return event.charCode;
+}else {
+return event.keyCode;
+}
+}
+};

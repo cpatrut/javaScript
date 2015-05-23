@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>FirstSCript</title>
+</head>
+
+<body>
+<input type="text" id="txt"/>
+
+</body>
+<script	>
+var eventUtility = {
+	getCharCode:function(event){
+	if(typeof event.charCode==="number"){
+	return event.charCode;
+}else {
+return event.keyCode;
+}
+}
+};
+(function () {
+
+    var textBox = document.getElementsById("txt");
+
+    eventUtility.addEvent(textBox, "keypress", function (evt) {
+	alert("x");
+        var code = eventUtility.getCharCode(evt);
+        alert(code);
+    });
+}());
+</script>
+</html>

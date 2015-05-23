@@ -1,0 +1,23 @@
+
+(function(){
+var form=document.getElementById("theForm");
+var button=form.myButton;
+var textBox=form.myTextbox;
+var textarea=form.myTextArea;
+var select=form.days;
+eventUtility.addEvent(form,"submit",function(evt){
+	eventUtility.preventDefault(evt);
+	
+});
+eventUtility.addEvent(button,"click",function(evt){
+
+	var target=eventUtility.getTarget(evt);
+
+	var index=select.selectedIndex;
+	var option=select.selectedOptions;
+	select.remove(6);
+	var wedOption=new Option("dada",6);
+	select.options[select.options.length]=wedOption;
+
+});
+}());

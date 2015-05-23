@@ -1,0 +1,27 @@
+var obj={
+    name:"obj,object",
+    doSo:function(){
+    alert(this.name);
+    }
+};
+var foo={
+    name:"foo object"
+};
+var bar={
+    name:"bar object"
+};
+obj.doSo.apply(foo);
+
+var obj={
+    name:"obj,object",
+    doSo:function(x,y){
+    alert(this.name+" " +x+ " " +y);
+    }
+};
+var foo={
+    name:"foo object"
+};
+var bar={
+    name:"bar object"
+};
+obj.doSo.apply(foo,[1,2]);

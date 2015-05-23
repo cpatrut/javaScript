@@ -1,0 +1,30 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>title</title>
+</head>
+<body>
+<form name="theForm" id="theForm" action="">
+	<input type="text" id="myTextbox"/><br/>
+	<textarea id="myTextArea">This is a text area</textarea>
+	
+	<br><input type="button" id="myButton" value="click me"/>
+<select id="days" name="days">
+	<option value="0">Sunday</option>	
+			
+	<option value="1">Mondayoption>	
+	<option value="2">Tuesday</option>	
+	<option value="3">WednesDay</option>	
+	<option value="4">Thursday</option>	
+	<option value="5">Friday</option>	
+</select>
+
+</form>
+
+</body>
+<script type="text/javascript" src="eventUtility.js"></script>
+<script type="text/javascript" src="script1.js">
+</script>
+
+
+</html>>
